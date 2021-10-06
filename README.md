@@ -1,6 +1,6 @@
-# <img src="./img/database.png" width="5" height="8"> SQL and NoSQL databases 
+# <img src="./img/database.png" width="15" height="20"> SQL and NoSQL databases 
 
-## ![Mongodb Logo](./img/Mongo.jfif) [MongoDB](https://www.mongodb.com/)
+## <img src="./img/Mongo.jfif" width="12" height="17"> [MongoDB](https://www.mongodb.com/)
 
 ![Node Logo](./img/Node.png) developers often consider `MongoDB` to be the main choice when building a data-driven application. However, many alternatives may provide better solutions.
 
