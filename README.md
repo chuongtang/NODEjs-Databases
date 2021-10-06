@@ -22,6 +22,10 @@ Redis is often used as a cache. It can also be used as a storage when the consis
 
 ### [ioRedis](https://www.npmjs.com/package/ioredis)
 A robust, performance-focused and full-featured Redis client for Node.js.
-Unlike NodeRedis, ioRedis support `promises`
+Unlike NodeRedis, ioRedis supports `promises`
+
+### [connect-Redis](https://www.npmjs.com/package/connect-redis)
+It provides Redis session storage for Express.
+
 
 ## <img src="./img/MySQL.jfif" height="26"> [MySQL](https://www.mysql.com/)
