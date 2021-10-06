@@ -2,6 +2,7 @@
 
 const http = require('http');
 const mongoose = require('mongoose');
+const Redis = require("ioredis");
 
 const config = require('../config');
 const App = require('../app');
@@ -9,6 +10,24 @@ const App = require('../app');
 async function connectToMongoose() {
   return mongoose.connect(config.mongodb.url);
 }
+
+// REDIS SECTION
+function connectToRedis() {
+  const redis = new Redis(config.redis.port);
+  // listen to the "connect" event
+  redis.on("connect", () => {
+    console.info("Successfully connected to Redis");
+  });
+
+  redis.on("error", (error) => {
+    console.error(error);
+    process.exit(1);
+  });
+  return redis;
+}
+
+const redis = connectToRedis();
+config.redis.client = redis;
 
 /* Logic to start the application */
 const app = App(config);
