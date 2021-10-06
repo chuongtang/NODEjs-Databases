@@ -1,4 +1,4 @@
-#  SQL and NoSQL databases ![databseLogo](./img/database.png)
+# <img src="./img/database.png" width="5" height="8"> SQL and NoSQL databases 
 
 ## ![Mongodb Logo](./img/Mongo.jfif) [MongoDB](https://www.mongodb.com/)
 
