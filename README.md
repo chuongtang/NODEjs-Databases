@@ -7,9 +7,9 @@
 
 This repository was built with the intention of exploring various database options to connect to Node.js backend such as:
 
-1. MongoDB  (shopper and maxcoin)
-2. Redis    (maxcoin)  
-3. MySQL.
+1. MongoDB  (Users management, Data Seeding, Schema Generation)
+2. Redis    (Session management, Set up Items services and basket services)  
+3. MySQL.   (Orders management, check-out services and review database relational links)
 
 CRUD operations was built by using JS classes and instances. 
 
@@ -27,5 +27,15 @@ Unlike NodeRedis, ioRedis supports `promises`
 ### [connect-Redis](https://www.npmjs.com/package/connect-redis)
 It provides Redis session storage for Express.
 
+#### Redis methods (commands) are referred to the comprehensive doc at: [Redis Commands](https://redis.io/commands)
+
 
 ## <img src="./img/MySQL.jfif" height="26"> [MySQL](https://www.mysql.com/)
+When to use relational databases:
+* When there are multiple different entities that are in some way, related.
+* When the database needs to stay in a consistent state.
+* When the database should also enforce this consistency no matter from which application it is accessed. 
+
+Example in this app: `Basket ↔ Order  ↔ OrderItems`
+
+Unlike Redis and MongoDB, relational databases like MySQL rely on static table structures so-called 'schemas' to be defined directly inside the database.
