@@ -7,9 +7,9 @@
 
 This repository was built with the intention of exploring various database options to connect to Node.js backend such as:
 
-1. MongoDB  (Users management, Data Seeding, Schema Generation)
-2. Redis    (Session management, Set up Items services and basket services)  
-3. MySQL.   (Orders management, check-out services and review database relational links)
+1. MongoDB  (Users management, Data Seeding, Schema Generation) `dockerDefaultPort: 27017`
+2. Redis    (Session management, Set up Items services and basket services)`dockerDefaultPort: 6379`  
+3. MySQL.   (Orders management, check-out services and review database relational links) `dockerDefaultPort: 3306`
 
 CRUD operations was built by using JS classes and instances. 
 
