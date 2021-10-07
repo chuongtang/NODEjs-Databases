@@ -10,9 +10,6 @@ require('dotenv').config();
 const mysql = require("mysql2/promise");
 const CoinAPI = require("../CoinAPI");
 
-const dbUsername = process.env.DB_USERNAME;
-const dbPassword = process.env.DB_PASSWORD;
-
 class MySQLBackend {
   constructor() {
     this.coinAPI = new CoinAPI();
@@ -20,15 +17,13 @@ class MySQLBackend {
   }
 
   async connect() {
-    console.log('hereISpassword', dbUsername);
     this.connection = await mysql.createConnection({
       host: "localhost",
       port: "3406",
-      user: "root",
-      password: dbPassword,
+      user: "NodeDB",
+      password: 'password!@#$%^&*(',
       database: "coincheck",
     });
-    console.log('connectionHERERERERE', this.connection);
 
     return this.connection;
   }

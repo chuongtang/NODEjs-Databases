@@ -13,7 +13,11 @@ This repository was built with the intention of exploring various database optio
 
 CRUD operations was built by using JS classes and instances. 
 
-Databases installed by pulling docker image from <img src="./img/docker.png" height="18"> hub 
+Databases installed by pulling docker image from <img src="./img/docker.png" height="23"> hub 
+
+###  <img src="./img/Mongoose.png" height="24"> [Mongoose](https://mongoosejs.com/) 
+A schema-based solution to modeling application data in MongoDB. It includes built-in type casting, validation, query building...  designed to work in an `asynchronous` environment. 
+Mongoose belongs to "**Object Document Mapper (ODM)**" category of the tech stack, while `Sequelize` can be primarily classified under "**Object Relational Mapper (ORM)**".
 
 ## <img src="./img/Redis.jpg" height="22"> [Redis](https://redis.io/)
 
@@ -39,3 +43,16 @@ When to use relational databases:
 Example in this app: `Basket ↔ Order  ↔ OrderItems`
 
 Unlike Redis and MongoDB, relational databases like MySQL rely on static table structures so-called 'schemas' to be defined directly inside the database.
+
+###  <img src="./img/Sequelize.png" height="24"> [Sequelize](https://sequelize.org/)
+ A promise-based ORM for Node.js and io.js. It supports `PostgreSQL`, `MySQL`, `MariaDB`, `SQLite` and `MSSQL`
+
+### Reverse Engineering in MySQL
+A powerful tool helps create a visual representation of relationship between different tables. With MySQL Workbench, you can reverse-engineer a database using a MySQL create script or you can connect to a live MySQL server and import a single database or a number of databases.
+
+### SQL Transaction: a single unit of work applied to a  relational database
+
+* It is a `sequence of ordered operations` performed on the database.
+* SQL statements are used to execute tasks such as update data or get data from a database.
+* The SQL statements of a transaction will either `Commit` or `Rollback` using a rollback statement.
+* The transaction comprises of two results, they are either `success` or `failure`.
