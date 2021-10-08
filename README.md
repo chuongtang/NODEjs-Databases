@@ -13,7 +13,7 @@ This repository was built with the intention of exploring various database optio
 
 CRUD operations was built by using JS classes and instances. 
 
-Databases installed by pulling docker image from <img src="./img/docker.png" height="23"> hub 
+Databases installed by pulling docker image from <img src="./img/docker.png" height="28"> hub 
 
 ###  <img src="./img/Mongoose.png" height="24"> [Mongoose](https://mongoosejs.com/) 
 A schema-based solution to modeling application data in MongoDB. It includes built-in type casting, validation, query building...  designed to work in an `asynchronous` environment. 
@@ -44,7 +44,7 @@ Example in this app: `Basket ↔ Order  ↔ OrderItems`
 
 Unlike Redis and MongoDB, relational databases like MySQL rely on static table structures so-called 'schemas' to be defined directly inside the database.
 
-###  <img src="./img/Sequelize.png" height="24"> [Sequelize](https://sequelize.org/)
+###  <img src="./img/sequelize.png" height="24"> [Sequelize](https://sequelize.org/)
  A promise-based ORM for Node.js and io.js. It supports `PostgreSQL`, `MySQL`, `MariaDB`, `SQLite` and `MSSQL`
 
 ### Reverse Engineering in MySQL

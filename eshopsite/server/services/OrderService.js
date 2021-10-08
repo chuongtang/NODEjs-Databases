@@ -45,7 +45,7 @@ class OrderService {
   async getAll() {
     return this.models.Order.findAll({
       where: {},
-      include: [this.models.OrderItem],
+      include: [this.models.OrderItem],// to resolve this
     });
   }
 
